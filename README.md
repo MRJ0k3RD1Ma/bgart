@@ -5,7 +5,6 @@ OOO Beautiful Perfect Grand firmasi uchun loyiha
     <VirtualHost *:80>
         ServerName a.bgart.local
         DocumentRoot "path/to/bgart/bgadmin/web"
-        
         <Directory "path/to/bgart/bgadmin/web">
             RewriteEngine on
             RewriteCond %{REQUEST_FILENAME} !-f
@@ -32,7 +31,6 @@ OOO Beautiful Perfect Grand firmasi uchun loyiha
     </VirtualHost>
 
 # t.bgart.local
-
     <VirtualHost *:80>
         ServerName t.bgart.local
         DocumentRoot "path/to/bgart/distributor/web"
@@ -45,3 +43,7 @@ OOO Beautiful Perfect Grand firmasi uchun loyiha
             Require all granted
         </Directory>
     </VirtualHost>
+
+Application katalogidan turib
+	composer install
+buyrug'ini bajarish lozim
